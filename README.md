@@ -23,14 +23,14 @@ A modern, responsive user interface for the ToDo application built with React an
 ### Configuration
 Install dependencies:
 
-Bash
-npm install
-Start the development server:
-
-Bash
-npm run dev
-🐳 Docker Deployment
-The frontend is served using Nginx in the Docker environment.
+  Bash
+  npm install
+  Start the development server:
+  
+  Bash
+  npm run dev
+  🐳 Docker Deployment
+  The frontend is served using Nginx in the Docker environment.
 
 Build: docker build -t todo-frontend.
 
