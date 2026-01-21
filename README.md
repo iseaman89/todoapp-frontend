@@ -1,16 +1,41 @@
-# React + Vite
+# ToDo App - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive user interface for the ToDo application built with React and Vite.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **User Authentication:** Sign up and Sign in pages.
+- **Task Management:** Create, Read, Update, and Delete tasks.
+- **Priority & Categories:** Organize tasks effectively.
+- **Responsive Design:** Works on desktop and mobile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **React** (Hooks, Context API/Redux).
+- **Vite** for fast builds.
+- **Axios** for API requests.
+- **Tailwind CSS** for styling.
 
-## React Compiler
+## 🛠️ Development Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v18+)
+- NPM or Yarn
 
-## Expanding the ESLint configuration
+### Configuration
+Create a `.env` file in the root directory:
+```env
+VITE_API_URL=http://localhost:8000
+Running Locally
+Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+🐳 Docker Deployment
+The frontend is served using Nginx in the Docker environment.
+
+Build: docker build -t todo-frontend .
+
+Run: Access via port 5173 (mapped from Nginx port 80).
