@@ -3,10 +3,10 @@ import { useAuth } from '../auth/useAuth';
 
 export const useToDoApi = () => {
     const { authData } = useAuth();
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:7095/api";
     
     const toDoApi = axios.create({
-        baseURL: 'https://localhost:7095/api/ToDo',
-        
+        baseURL: apiUrl + '/ToDo',
     });
     
     toDoApi.interceptors.request.use(config => {
