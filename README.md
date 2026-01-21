@@ -32,6 +32,7 @@ npm run dev
 🐳 Docker Deployment
 The frontend is served using Nginx in the Docker environment.
 
-Build: docker build -t todo-frontend .
+Build: docker build -t todo-frontend.
+
 
 Run: Access via port 5173 (mapped from Nginx port 80).
