@@ -1,38 +1,34 @@
-# ToDo App - Frontend
 
-A modern, responsive user interface for the ToDo application built with React and Vite.
+# TodoApp Frontend
 
-## ✨ Features
-- **User Authentication:** Sign up and Sign in pages.
-- **Task Management:** Create, Read, Update, and Delete tasks.
-- **Priority & Categories:** Organize tasks effectively.
-- **Responsive Design:** Works on desktop and mobile.
+Frontend for the Todo application built with **React + Vite**, served via **nginx** in production.
 
-## 🚀 Tech Stack
-- **React** (Hooks, Context API/Redux).
-- **Vite** for fast builds.
-- **Axios** for API requests.
-- **Tailwind CSS** for styling.
+## Features
 
-## 🛠️ Development Setup
+- React Hooks
+- Axios API integration
+- Authentication pages
+- Todo CRUD UI
 
-### Prerequisites
-- Node.js (v18+)
-- NPM or Yarn
+## Tech Stack
 
-### Configuration
-Install dependencies:
+- React
+- Vite
+- Axios
+- Docker + nginx
 
-  Bash
-  npm install
-  Start the development server:
-  
-  Bash
-  npm run dev
-  🐳 Docker Deployment
-  The frontend is served using Nginx in the Docker environment.
+## Local Development
 
-Build: docker build -t todo-frontend.
+```
+npm install
+npm run dev
+```
 
+App runs at http://localhost:5173
 
-Run: Access via port 5173 (mapped from Nginx port 80).
+## Production (Docker)
+
+```
+docker build -t todo-frontend .
+docker run -p 5173:80 todo-frontend
+```
