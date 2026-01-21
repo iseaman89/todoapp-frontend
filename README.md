@@ -21,10 +21,6 @@ A modern, responsive user interface for the ToDo application built with React an
 - NPM or Yarn
 
 ### Configuration
-Create a `.env` file in the root directory:
-```env
-VITE_API_URL=http://localhost:8000
-Running Locally
 Install dependencies:
 
 Bash
