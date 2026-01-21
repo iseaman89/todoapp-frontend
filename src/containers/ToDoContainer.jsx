@@ -23,20 +23,21 @@ const ToDoContainer = () => {
         const user = JSON.parse(userString);
         userName = user.name;
     }
+
+    const fetchToDos = async () => {
+        try {
+            const data = await getToDos();
+            setToDos(data);
+        } catch (err) {
+            console.error(err);
+            toast.error('Failed to load toDos.');
+        }
+    };
     
     useEffect(() => {
-        const fetchToDos = async () => {
-            try {
-                const data = await getToDos();
-                setToDos(data);
-            } catch (err) {
-                console.error(err);
-                toast.error('Failed to load toDos.');
-            }
-        };
-
         fetchToDos();
     }, []);
+    
 
     useEffect(() => {
         debouncedServerUpdateRef.current = debounce(async (data) => {
@@ -63,12 +64,8 @@ const ToDoContainer = () => {
 
     const handleCreate = async (data) => {
         try {
-            const response = await createToDo(data);
-            const newTodo = response.data || data;
-
-            setToDos(prev => {
-                return [...prev, newTodo];
-            });
+            await createToDo(data);
+            fetchToDos();
             
             setCurrentToDos(toDos);
 

@@ -8,6 +8,7 @@ const CreateToDo = ({createToDo}) => {
     const [priority, setPriority] = React.useState(1);
     const [category, setCategory] = React.useState(0);
     const [activeButton, setActiveButton] = React.useState(false);
+    const isCompleted = false;
     
     const handleCreate = () => {
         if (!activeButton) return;
@@ -15,7 +16,7 @@ const CreateToDo = ({createToDo}) => {
             toast.error("Title can't be more than 200 characters!");
             return;
         }
-        createToDo({ title, priority, category });
+        createToDo({ title, isCompleted, priority, category });
         setTitle("");
         setPriority(1);
         setCategory(0);
