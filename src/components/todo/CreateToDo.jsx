@@ -31,7 +31,7 @@ const CreateToDo = ({createToDo}) => {
     
     return (
         <div className="container flex flex-col items-start justify-center w-full gap-3 p-5 bg-white rounded-lg border border-gray-200">
-            <div className="flex items-center justify-between gap-5 w-full">
+            <div className="flex items-center justify-between gap-3 w-full">
                 <input 
                     className="input text-sm w-full rounded-lg px-4 py-2" 
                     placeholder="Add a new task..." 

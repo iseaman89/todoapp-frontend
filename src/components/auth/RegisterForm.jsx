@@ -63,7 +63,7 @@ const RegisterForm = ({showRegister, setShowRegister}) => {
                                 <h3 className="text-2xl lg:text-4xl text-text-sub">
                                     Register
                                 </h3>
-                                <div className="relative w-3/4">
+                                <div className="relative w-full md:w-3/4">
                                     <Field
                                         type="text"
                                         name="name"
@@ -83,7 +83,7 @@ const RegisterForm = ({showRegister, setShowRegister}) => {
                                         )}
                                     </ErrorMessage>
                                 </div>
-                                <div className="relative w-3/4">
+                                <div className="relative w-full md:w-3/4">
                                     <Field
                                         type="email"
                                         name="email"
@@ -103,7 +103,7 @@ const RegisterForm = ({showRegister, setShowRegister}) => {
                                         )}
                                     </ErrorMessage>
                                 </div>
-                                <div className="relative w-3/4"> 
+                                <div className="relative w-full md:w-3/4"> 
                                     <Field
                                         type={showPass ? "text" : "password"}
                                         name="password"
@@ -142,7 +142,7 @@ const RegisterForm = ({showRegister, setShowRegister}) => {
                                         )}
                                     </ErrorMessage>
                                 </div>
-                                <div className="relative w-3/4">
+                                <div className="relative w-full md:w-3/4">
                                     <Field
                                         type={showConfirmPass ? "text" : "password"}
                                         name="passwordConfirm"
@@ -184,7 +184,7 @@ const RegisterForm = ({showRegister, setShowRegister}) => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="px-8 py-1 w-3/4 text-xl text-white bg-black rounded-lg hover:cursor-pointer lg:text-2xl"
+                                    className="px-8 py-1 w-full md:w-3/4 text-xl text-white bg-black rounded-lg hover:cursor-pointer lg:text-2xl"
                                 >
                                     {isSubmitting ? 'Loading...' : 'Register'}
                                 </button>

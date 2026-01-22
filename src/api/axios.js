@@ -2,7 +2,7 @@ import axios from 'axios';
 import { authService } from '../auth/authService';
 import { refresh } from "./auth.api.js";
 
-const apiUrl = "http://localhost:7095/api";
+const apiUrl = "https://localhost:7095/api";
 
 const api = axios.create({
     baseURL: apiUrl,

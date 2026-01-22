@@ -8,7 +8,7 @@ const AuthContainer = () => {
     return (
         <div className="flex flex-1 flex-col items-center justify-center gap-5 h-screen w-screen">
             <h1
-                className="text-5xl font-bold bg-clip-text text-transparent animate-gradient mt--10"
+                className="text-4xl  md:text-5xl font-bold bg-clip-text text-transparent animate-gradient mt--10"
                 style={{
                     backgroundImage: 'var(--color-progress)',
                     backgroundSize: '200% 200%', 
@@ -18,7 +18,7 @@ const AuthContainer = () => {
             >
                 ToDo or not ToDo
             </h1>
-            <h3 className="text-lg text-text-sub mb-10">
+            <h3 className="text-sm md:text-lg text-text-sub mb-10">
                 To be, or not to be productive? That is the question!
             </h3>
             <div className="container h-2/3 w-3/4 md:w-1/2 md:h-1/2 lg:w-100 xl:w-120 overflow-x-hidden">

@@ -3,7 +3,7 @@ import { useAuth } from '../auth/useAuth';
 
 export const useToDoApi = () => {
     const { authData } = useAuth();
-    const apiUrl = "http://localhost:7095/api";
+    const apiUrl = "https://localhost:7095/api";
     
     const toDoApi = axios.create({
         baseURL: apiUrl + '/ToDo',

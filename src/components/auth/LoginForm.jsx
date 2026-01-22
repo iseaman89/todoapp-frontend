@@ -51,10 +51,10 @@ function LoginForm({ showRegister, setShowRegister }) {
                             className="h-full"
                         >
                             <Form className="flex flex-col items-center p-8 justify-between h-full w-full">
-                                <h3 className="text-2xl lg:text-4xl text-text-sub">
+                                <h3 className="text-4xl text-text-sub">
                                     Login
                                 </h3>
-                                <div className="relative w-3/4">
+                                <div className="relative w-full md:w-3/4">
                                     <Field
                                         type="email"
                                         name="email"
@@ -74,7 +74,7 @@ function LoginForm({ showRegister, setShowRegister }) {
                                         )}
                                     </ErrorMessage>
                                 </div>
-                                <div className="relative w-3/4">
+                                <div className="relative w-full md:w-3/4">
                                     <Field
                                         type={showPass ? "text" : "password"}
                                         name="password"
@@ -116,7 +116,7 @@ function LoginForm({ showRegister, setShowRegister }) {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="px-8 py-1 w-3/4 text-xl text-white bg-black rounded-lg hover:cursor-pointer lg:text-2xl"
+                                    className="px-8 py-1 w-full md:w-3/4 text-xl text-white bg-black rounded-lg hover:cursor-pointer lg:text-2xl"
                                 >
                                     {isSubmitting ? 'Loading...' : 'Login'}
                                 </button>

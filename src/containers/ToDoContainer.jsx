@@ -98,9 +98,9 @@ const ToDoContainer = () => {
     };
 
     return (
-        <div className="p-4 gap-4 w-3/4 max-w-3xl flex flex-col items-center justify-center">
+        <div className="p-2 md:p-4 gap-4 w-full md:w-3/4 max-w-3xl flex flex-col items-center justify-center">
             <h1
-                className="text-5xl font-bold bg-clip-text text-transparent animate-gradient"
+                className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent animate-gradient"
                 style={{ 
                     backgroundImage: 'var(--color-progress)',
                     backgroundSize: '200% 200%',
@@ -111,7 +111,7 @@ const ToDoContainer = () => {
                 ToDo or not ToDo
             </h1>
             <h2
-                className="text-2xl font-bold bg-clip-text text-transparent animate-gradient"
+                className="text-xl md:text-2xl font-bold bg-clip-text text-transparent animate-gradient"
                 style={{ 
                     backgroundImage: 'var(--color-progress)',
                     backgroundSize: '200% 200%',
@@ -121,17 +121,17 @@ const ToDoContainer = () => {
             >
                 {"Welcome back " + userName}
             </h2>
-            <h3 className="text-lg text-text-sub">
+            <h3 className="text-md md:text-lg text-text-sub">
                 Stay organized and productive
             </h3>
             <div className="flex items-center justify-center gap-3">
-                <h4 className="text-md text-text-sub">
+                <h4 className="text-sm md:text-md text-text-sub">
                     {completedCount + " completed"}
                 </h4>
-                <h4 className="text-md text-text-sub">
+                <h4 className="text-sm md:text-md text-text-sub">
                     •
                 </h4>
-                <h4 className="text-md text-text-sub">
+                <h4 className="text-sm md:text-md text-text-sub">
                     {totalCount + " total tasks"}
                 </h4>
             </div>

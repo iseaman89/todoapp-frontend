@@ -23,7 +23,7 @@ const EditToDo = ({toDo, setToDos, updateToDo, setEdit}) => {
     
     return (
         <div className="flex flex-1 items-center">
-            <div className="flex flex-col justify-between gap-2 p-2 w-full">
+            <div className="flex flex-col justify-between gap-2 w-full">
                 <input
                     className="input rounded-lg w-full px-3 py-1 text-sm border border-border"
                     placeholder="Add new title..."
